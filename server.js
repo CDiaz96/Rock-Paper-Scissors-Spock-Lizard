@@ -41,8 +41,8 @@ const server = http.createServer(function(req, res) {
       res.writeHead(200, {
         'Content-Type': 'application/json'
       });
-      let chosenButton = params['choices'];
-      console.log(chosenButton)
+      let player = params['choices'];
+      console.log(player)
       // random values
       let random = Math.floor(Math.random() * 5)
       // array containing choices
@@ -50,32 +50,32 @@ const server = http.createServer(function(req, res) {
       let winner;
 
       let temp = ["spock", "scissor", "rock", "paper", "lizard"];
-      let pick = temp[random];
-      console.log(pick)
-      if (pick === chosenButton) {
-        winner = "its a Tie"
-      } else if ((pick === "rock") && (chosenButton === "lizard" || chosenButton === "scissor")) {
-        winner = "Bot wins"
-      } else if ((pick === "scissor") && (chosenButton === "lizard" || chosenButton === "paper")) {
-        winner = "Bot wins"
-      } else if ((pick === "spock") && (chosenButton === "scissor" || chosenButton === "rock")) {
-        winner = "Bot wins"
-      } else if ((pick === "paper") && (chosenButton === "spock" || chosenButton === "rock")) {
-        winner = "Bot wins"
-      } else if ((pick === "lizard") && (chosenButton === "spock" || chosenButton === "paper")) {
-        winner = "Bot wins"
+      let bot = temp[random];
+      console.log(bot)
+      if (bot === player) {
+        winner = "It's a Tie!"
+      } else if ((bot === "rock") && (player === "lizard" || player === "scissor")) {
+        winner = "You Lose ..."
+      } else if ((bot === "scissor") && (player === "lizard" || player === "paper")) {
+        winner = "You Lose ..."
+      } else if ((bot === "spock") && (player === "scissor" || player === "rock")) {
+        winner = "You Lose ..."
+      } else if ((bot === "paper") && (player === "spock" || player === "rock")) {
+        winner = "You Lose ..."
+      } else if ((bot === "lizard") && (player === "spock" || player === "paper")) {
+        winner = "You Lose ..."
 
 
-      } else if ((chosenButton === "rock") && (pick === "lizard" || pick === "scissor")) {
-        winner = "You win"
-      } else if ((chosenButton === "scissor") && (pick === "lizard" || pick === "paper")) {
-        winner = "You win"
-      } else if ((chosenButton === "spock") && (pick === "scissor" || pick === "rock")) {
-        winner = "You win"
-      } else if ((chosenButton === "paper") && (pick === "spock" || pick === "rock")) {
-        winner = "You win"
-      } else if ((chosenButton === "lizard") && (pick === "spock" || pick === "paper")) {
-        winner = "You win"
+      } else if ((player === "rock") && (bot === "lizard" || bot === "scissor")) {
+        winner = "Winner Winner!"
+      } else if ((player === "scissor") && (bot === "lizard" || bot === "paper")) {
+        winner = "Winner Winner!"
+      } else if ((player === "spock") && (bot === "scissor" || bot === "rock")) {
+        winner = "Winner Winner!"
+      } else if ((player === "paper") && (bot === "spock" || bot === "rock")) {
+        winner = "Winner Winner!"
+      } else if ((player === "lizard") && (bot === "spock" || bot === "paper")) {
+        winner = "Winner Winner!"
 
       } else {
         winner = "Carolin "

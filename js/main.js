@@ -12,7 +12,7 @@ function myFunction(e) {
     .then(response => response.json())
     .then((data) => {
       console.log(data);
-      document.querySelector('h2').innerHTML = `${data.answer}`
+      document.querySelector('p').innerHTML = `${data.answer}`
     })
 
   // .catch(err => {
