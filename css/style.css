@@ -1,0 +1,35 @@
+body{
+  background-image: url("https://thumbs.gfycat.com/PeskyPassionateAngelwingmussel-size_restricted.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#piedra{
+  background-image: url("https://rwest88.github.io/Rock-Paper-Scissors/assets/images/rock.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+#papel{
+  background-image: url("https://icon-library.com/images/rock-paper-scissors-icon/rock-paper-scissors-icon-6.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+#tijera{
+  background-image: url("https://icon-library.com/images/rock-paper-scissors-icon/rock-paper-scissors-icon-5.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+#other{
+  background-image: url("https://icon-library.com/images/rock-paper-scissors-icon/rock-paper-scissors-icon-6.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+#lagarto{
+  background-image: url("https://icon-library.com/images/spock-icon/spock-icon-2.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
